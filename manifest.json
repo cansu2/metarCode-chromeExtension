@@ -1,0 +1,25 @@
+{   
+    "manifest_version": 2,
+    "name": "Metar Highlighter",
+    "version": "1.0",
+    "description": "Convert Metar code to reader",
+        "icons": {
+        "128": "image128.png",
+        "48": "image48.png",
+        "16": "image16.png"
+    },
+    "browser_action" :{
+        "default_icon": "image16.png",
+        "default_popup": "popup.html",
+        "default_title": "MetarHighlighter"
+    },
+    "background": {
+        "scripts": ["eventPage.js"],
+        "persistent": false
+    },
+    "permissions": [
+        "storage",
+        "notifications",
+        "contextMenus"
+    ]
+  }
